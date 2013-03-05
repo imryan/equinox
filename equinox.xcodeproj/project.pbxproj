@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		940E9ABC16E02C030057ECD4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 940E9ABB16E02C030057ECD4 /* icon.icns */; };
+		943A02C216DD7BD90063D7DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943A02C116DD7BD90063D7DB /* Cocoa.framework */; };
+		943A02CC16DD7BD90063D7DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 943A02CA16DD7BD90063D7DB /* InfoPlist.strings */; };
+		943A02CE16DD7BD90063D7DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A02CD16DD7BD90063D7DB /* main.m */; };
+		943A02D216DD7BD90063D7DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 943A02D016DD7BD90063D7DB /* Credits.rtf */; };
+		943A02D516DD7BD90063D7DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A02D416DD7BD90063D7DB /* AppDelegate.m */; };
+		943A02D816DD7BD90063D7DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943A02D616DD7BD90063D7DB /* MainMenu.xib */; };
+		943A02DF16DD8C4D0063D7DB /* equinox.pl in Resources */ = {isa = PBXBuildFile; fileRef = 943A02DE16DD8C4D0063D7DB /* equinox.pl */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		940E9ABB16E02C030057ECD4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		943A02BE16DD7BD90063D7DB /* equinox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = equinox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		943A02C116DD7BD90063D7DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		943A02C416DD7BD90063D7DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		943A02C516DD7BD90063D7DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		943A02C616DD7BD90063D7DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		943A02C916DD7BD90063D7DB /* equinox-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "equinox-Info.plist"; sourceTree = "<group>"; };
+		943A02CB16DD7BD90063D7DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		943A02CD16DD7BD90063D7DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		943A02CF16DD7BD90063D7DB /* equinox-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "equinox-Prefix.pch"; sourceTree = "<group>"; };
+		943A02D116DD7BD90063D7DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		943A02D316DD7BD90063D7DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		943A02D416DD7BD90063D7DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		943A02D716DD7BD90063D7DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		943A02DE16DD8C4D0063D7DB /* equinox.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = equinox.pl; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		943A02BB16DD7BD90063D7DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A02C216DD7BD90063D7DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		943A02B516DD7BD90063D7DB = {
+			isa = PBXGroup;
+			children = (
+				940E9ABB16E02C030057ECD4 /* icon.icns */,
+				943A02C716DD7BD90063D7DB /* equinox */,
+				943A02C016DD7BD90063D7DB /* Frameworks */,
+				943A02BF16DD7BD90063D7DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		943A02BF16DD7BD90063D7DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				943A02BE16DD7BD90063D7DB /* equinox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		943A02C016DD7BD90063D7DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				943A02C116DD7BD90063D7DB /* Cocoa.framework */,
+				943A02C316DD7BD90063D7DB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		943A02C316DD7BD90063D7DB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				943A02C416DD7BD90063D7DB /* AppKit.framework */,
+				943A02C516DD7BD90063D7DB /* CoreData.framework */,
+				943A02C616DD7BD90063D7DB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		943A02C716DD7BD90063D7DB /* equinox */ = {
+			isa = PBXGroup;
+			children = (
+				943A02D316DD7BD90063D7DB /* AppDelegate.h */,
+				943A02D416DD7BD90063D7DB /* AppDelegate.m */,
+				943A02D616DD7BD90063D7DB /* MainMenu.xib */,
+				943A02C816DD7BD90063D7DB /* Supporting Files */,
+			);
+			path = equinox;
+			sourceTree = "<group>";
+		};
+		943A02C816DD7BD90063D7DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				943A02DE16DD8C4D0063D7DB /* equinox.pl */,
+				943A02C916DD7BD90063D7DB /* equinox-Info.plist */,
+				943A02CA16DD7BD90063D7DB /* InfoPlist.strings */,
+				943A02CD16DD7BD90063D7DB /* main.m */,
+				943A02CF16DD7BD90063D7DB /* equinox-Prefix.pch */,
+				943A02D016DD7BD90063D7DB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		943A02BD16DD7BD90063D7DB /* equinox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 943A02DB16DD7BD90063D7DB /* Build configuration list for PBXNativeTarget "equinox" */;
+			buildPhases = (
+				943A02BA16DD7BD90063D7DB /* Sources */,
+				943A02BB16DD7BD90063D7DB /* Frameworks */,
+				943A02BC16DD7BD90063D7DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = equinox;
+			productName = equinox;
+			productReference = 943A02BE16DD7BD90063D7DB /* equinox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		943A02B616DD7BD90063D7DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ryan Cohen";
+			};
+			buildConfigurationList = 943A02B916DD7BD90063D7DB /* Build configuration list for PBXProject "equinox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 943A02B516DD7BD90063D7DB;
+			productRefGroup = 943A02BF16DD7BD90063D7DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				943A02BD16DD7BD90063D7DB /* equinox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		943A02BC16DD7BD90063D7DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A02CC16DD7BD90063D7DB /* InfoPlist.strings in Resources */,
+				943A02D216DD7BD90063D7DB /* Credits.rtf in Resources */,
+				943A02D816DD7BD90063D7DB /* MainMenu.xib in Resources */,
+				943A02DF16DD8C4D0063D7DB /* equinox.pl in Resources */,
+				940E9ABC16E02C030057ECD4 /* icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		943A02BA16DD7BD90063D7DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				943A02CE16DD7BD90063D7DB /* main.m in Sources */,
+				943A02D516DD7BD90063D7DB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		943A02CA16DD7BD90063D7DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A02CB16DD7BD90063D7DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		943A02D016DD7BD90063D7DB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A02D116DD7BD90063D7DB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		943A02D616DD7BD90063D7DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				943A02D716DD7BD90063D7DB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		943A02D916DD7BD90063D7DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		943A02DA16DD7BD90063D7DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		943A02DC16DD7BD90063D7DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "equinox/equinox-Prefix.pch";
+				INFOPLIST_FILE = "equinox/equinox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		943A02DD16DD7BD90063D7DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "equinox/equinox-Prefix.pch";
+				INFOPLIST_FILE = "equinox/equinox-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		943A02B916DD7BD90063D7DB /* Build configuration list for PBXProject "equinox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A02D916DD7BD90063D7DB /* Debug */,
+				943A02DA16DD7BD90063D7DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		943A02DB16DD7BD90063D7DB /* Build configuration list for PBXNativeTarget "equinox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				943A02DC16DD7BD90063D7DB /* Debug */,
+				943A02DD16DD7BD90063D7DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 943A02B616DD7BD90063D7DB /* Project object */;
+}
