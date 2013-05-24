@@ -1,6 +1,6 @@
 /* http://imryan.mit-license.org/
  *
- * EQUINOX (1.0.2) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
+ * EQUINOX (1.0.3) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
  * USE IT TO CHECK YOUR SITE PROTECTION/ETC.
  *
  * This source is subject to the Microsoft Permissive License.

@@ -11,6 +11,11 @@
 #  February 26, 2013          # + Program enters ver. 1.0.2
 #-----------------------------# + New packet(s) to be sent.
 
+# ----------------------------# + Code cleaned up.
+#  ver. 1.0.3                 # + Comments clarified.
+#  May 23, 2013               # + Program enters ver. 1.0.3
+#-----------------------------# + Project undergoing work soon.
+
 use Socket;
 use strict;
 
