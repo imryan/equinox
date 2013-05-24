@@ -15,6 +15,7 @@ To be implemented
 * Ability to include your own DDoS script, and configure the GUI to work with it accordingly.
 * GUI design upgrades.
 * More, unplanned features, also coming soon.
+* Renamed folders contained with their corresponding classes. (Better organization)
 
 Install
 ---
