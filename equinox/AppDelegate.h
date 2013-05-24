@@ -1,6 +1,6 @@
-/* Copyright (c) 2013. All Right Reserved, http://imryan.net/
+/* http://imryan.mit-license.org/
  *
- * EQUINOX (1.0.2) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
+ * EQUINOX (1.0.3) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
  * USE IT TO CHECK YOUR SITE PROTECTION/ETC.
  *
  * This source is subject to the Microsoft Permissive License.
@@ -19,31 +19,34 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     
-    /* gui elements that pass data */
+    // Fields to be inputted into attack
     IBOutlet NSTextField *ipField;
     IBOutlet NSTextField *portField;
     IBOutlet NSTextField *timeField;
     
-    /* sidebar log */
+    // Sidebar console
     IBOutlet NSTextView *logView;
     
-    /* lower screen elements */
+    // Bottom window elements
     IBOutlet NSProgressIndicator *loader;
-    IBOutlet NSTextField *sendingStr;
+    IBOutlet NSTextField         *sendingStr;
     
-    /* vars to store data in */
+    // Variables to hold values
     NSString *ip;
     NSString *port;
     NSString *size;
     NSString *time;
     
-    /* loader timer */
+    // Loader timer
     NSTimer *timer;
     NSString *ti;
     int i;
 
 }
+
 - (IBAction)send:(id)sender;
 - (IBAction)help:(id)sender;
+
 @property (assign) IBOutlet NSWindow *window;
+
 @end

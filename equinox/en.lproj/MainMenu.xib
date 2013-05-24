@@ -2,10 +2,10 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12C60</string>
+		<string key="IBDocument.SystemVersion">12A256</string>
 		<string key="IBDocument.InterfaceBuilderVersion">3084</string>
-		<string key="IBDocument.AppKitVersion">1187.34</string>
-		<string key="IBDocument.HIToolboxVersion">625.00</string>
+		<string key="IBDocument.AppKitVersion">1185</string>
+		<string key="IBDocument.HIToolboxVersion">622.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaPlugin</string>
 			<string key="NS.object.0">3084</string>
@@ -49,7 +49,7 @@
 				<array class="NSMutableArray" key="NSMenuItems">
 					<object class="NSMenuItem" id="694149608">
 						<reference key="NSMenu" ref="649796088"/>
-						<string key="NSTitle">Equinox</string>
+						<string key="NSTitle">equinox</string>
 						<string key="NSKeyEquiv"/>
 						<int key="NSKeyEquivModMask">1048576</int>
 						<int key="NSMnemonicLoc">2147483647</int>
@@ -63,11 +63,11 @@
 						</object>
 						<string key="NSAction">submenuAction:</string>
 						<object class="NSMenu" key="NSSubmenu" id="110575045">
-							<string key="NSTitle">Equinox</string>
+							<string key="NSTitle">equinox</string>
 							<array class="NSMutableArray" key="NSMenuItems">
 								<object class="NSMenuItem" id="238522557">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">About Equinox</string>
+									<string key="NSTitle">About equinox</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -607,7 +607,7 @@
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{335, 390}, {484, 229}}</string>
 				<int key="NSWTFlags">1685585920</int>
-				<string key="NSWindowTitle">Equinox v1.0.2</string>
+				<string key="NSWindowTitle">equinox</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
@@ -838,7 +838,7 @@
 											<string key="NSFrameSize">{130, 178}</string>
 											<reference key="NSSuperview" ref="349860116"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="715378757"/>
+											<reference key="NSNextKeyView"/>
 											<string key="NSReuseIdentifierKey">_NS:13</string>
 											<object class="NSTextContainer" key="NSTextContainer" id="572030600">
 												<object class="NSLayoutManager" key="NSLayoutManager">
@@ -970,7 +970,7 @@
 							<string key="NSFrame">{{345, 37}, {132, 180}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="349860116"/>
+							<reference key="NSNextKeyView" ref="715378757"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSsFlags">133634</int>
 							<reference key="NSVScroller" ref="715378757"/>
@@ -991,7 +991,7 @@
 										<object class="NSProgressIndicator" id="152285829">
 											<reference key="NSNextResponder" ref="895333839"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{13, 8}, {126, 20}}</string>
+											<string key="NSFrame">{{11, 7}, {130, 20}}</string>
 											<reference key="NSSuperview" ref="895333839"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="216482740"/>
@@ -1003,7 +1003,7 @@
 										<object class="NSTextField" id="216482740">
 											<reference key="NSNextResponder" ref="895333839"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{148, 11}, {107, 14}}</string>
+											<string key="NSFrame">{{148, 12}, {107, 14}}</string>
 											<reference key="NSSuperview" ref="895333839"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="373680124"/>
@@ -1072,7 +1072,7 @@
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="286254636"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1366, 746}}</string>
 				<string key="NSMinSize">{484, 251}</string>
 				<string key="NSMaxSize">{484, 251}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>

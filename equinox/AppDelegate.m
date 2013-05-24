@@ -1,4 +1,4 @@
-/* Copyright (c) 2013. All Right Reserved, http://imryan.net/
+/* http://imryan.mit-license.org/
  *
  * EQUINOX (1.0.2) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
  * USE IT TO CHECK YOUR SITE PROTECTION/ETC.
@@ -21,14 +21,12 @@
 
 - (IBAction)help:(id)sender
 {
-    
     NSBeginAlertSheet(@"IP Formatting", @"OK", nil, nil, [[NSApp delegate]window], self, @selector(sheetDidEnd:resultCode:contextInfo:), NULL, NULL, @"IP Address must be numerical, like this: '192.168.1.1'. To get this, ping the IP in Terminal: 'ping http://google.com' to acquire an IP, or open Network Utility > Ping. Then, enter the hostname. The first number returned is the IP address for the hostname.");
 }
 
 - (IBAction)send:(id)sender
 {
-    
-    /* get time & add information to log */
+    // Get system's current time & add information to log (console)
     NSDateFormatter *formatter;
     NSString        *timeStr;
     
@@ -37,33 +35,34 @@
     timeStr = [formatter stringFromDate:[NSDate date]];
     [formatter release];
  
-    /* check if the fields are filled in, then assign default values */
+    // Check if all fields are valid and assign the values to variables
     if ([ipField.stringValue isEqualToString:@""] || [timeField.stringValue isEqualToString:@""] || [portField.stringValue isEqualToString:@""])
     {
         NSBeginAlertSheet(@"Some fields are missing.", @"OK", nil, nil, [[NSApp delegate]window], self, @selector(sheetDidEnd:resultCode:contextInfo:), NULL, NULL, @"In order to attack the IP, we're going to need an IP to connect to, a port, and a duration.");
         
         NSString *timeLog = [NSString stringWithFormat:@"+ %@: %@\n- - - - - - - - - -\n", timeStr, @"Attack not sent!"];
+        
         [logView.textStorage.mutableString appendString:timeLog];
         
     } else {
         
-    /* retreive our data to be sent */
-    ip = ipField.stringValue;
+    // Retrieve the data to be sent
+    ip   = ipField.stringValue;
     port = portField.stringValue;
     time = timeField.stringValue;
         
     ti = [NSString stringWithFormat:@"%d", [time intValue]];
     
-    /* open the path to the equinox.pl file */
+    // Open the path to the Perl script
     NSString *path = [NSString stringWithFormat:@"%@", [[NSBundle mainBundle] pathForResource:@"equinox" ofType:@"pl"]];
-     
-    /* tell the command-line to open equinox.pl and run the script(s) */
+
+    // Tell Terminal to open the Perl script, replace the %@ values, and run the script
     NSString *s = [NSString stringWithFormat:@"tell application \"Terminal\" to do script \"perl %@ %@ %@ 0 %@\"", path, ip, port, time];
     
     NSAppleScript *as = [[NSAppleScript alloc] initWithSource:s];
     [as executeAndReturnError:nil];
     
-    /* hide terminal */
+    // Hide the Terminal
     NSString *c = [NSString stringWithFormat:@"set win to \"Terminal\" tell application \"System Events\" to tell process win to keystroke \"h\" using command down"];
     
     NSAppleScript *hw = [[NSAppleScript alloc] initWithSource:c];
@@ -71,9 +70,9 @@
         
     NSString *timeLog = [NSString stringWithFormat:@"+ %@: %@\n- - - - - - - - - -\n", timeStr, @"Attack sent!"];
     [logView.textStorage.mutableString appendString:timeLog];
+    
         
-        
-        /* display 'sending...' label, and start loader */
+        // Display 'sending...' and start the loader
         [sendingStr setHidden:false];
         [loader setHidden:false];
         [loader startAnimation:loader];
@@ -84,8 +83,7 @@
 
 - (void)stopLoader
 {
-    i += 1;
-    
+    i++;
     if (i==[ti intValue]) {
         [timer invalidate];
         [loader stopAnimation:loader];
@@ -93,14 +91,16 @@
         [sendingStr setHidden:true];
         i = 0;
     }
-    
 }
 
+// Method that handles the alert sheet hiding
 - (void)sheetDidEnd:(NSWindow *)sheet resultCode:(NSInteger)resultCode contextInfo:(void *)contextInfo {}
 
 - (void)dealloc
 {
     [super dealloc];
+    
+    // Release unused variables here...
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -109,7 +109,7 @@
     [loader setHidden:true];
     [sendingStr setHidden:true];
     
-    /* sidebar log attributes */
+    // Sidebar console properties
     [logView setEditable:false];
     [logView setRichText:false];
     [logView setAlignment:NSCenterTextAlignment];
