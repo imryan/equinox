@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		940E9ABC16E02C030057ECD4 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 940E9ABB16E02C030057ECD4 /* icon.icns */; };
+		9437A6E917506279005FEA97 /* equinox.pl in Resources */ = {isa = PBXBuildFile; fileRef = 9437A6E817506279005FEA97 /* equinox.pl */; };
 		943A02C216DD7BD90063D7DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 943A02C116DD7BD90063D7DB /* Cocoa.framework */; };
 		943A02CC16DD7BD90063D7DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 943A02CA16DD7BD90063D7DB /* InfoPlist.strings */; };
 		943A02CE16DD7BD90063D7DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A02CD16DD7BD90063D7DB /* main.m */; };
 		943A02D216DD7BD90063D7DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 943A02D016DD7BD90063D7DB /* Credits.rtf */; };
 		943A02D516DD7BD90063D7DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 943A02D416DD7BD90063D7DB /* AppDelegate.m */; };
 		943A02D816DD7BD90063D7DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 943A02D616DD7BD90063D7DB /* MainMenu.xib */; };
-		943A02DF16DD8C4D0063D7DB /* equinox.pl in Resources */ = {isa = PBXBuildFile; fileRef = 943A02DE16DD8C4D0063D7DB /* equinox.pl */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		940E9ABB16E02C030057ECD4 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		9437A6E817506279005FEA97 /* equinox.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = equinox.pl; path = scripts/equinox.pl; sourceTree = SOURCE_ROOT; };
 		943A02BE16DD7BD90063D7DB /* equinox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = equinox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		943A02C116DD7BD90063D7DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		943A02C416DD7BD90063D7DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -32,7 +33,6 @@
 		943A02D316DD7BD90063D7DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		943A02D416DD7BD90063D7DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		943A02D716DD7BD90063D7DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		943A02DE16DD8C4D0063D7DB /* equinox.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; path = equinox.pl; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,11 +47,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9437A6E717506270005FEA97 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9437A6E817506279005FEA97 /* equinox.pl */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		9437A6EA175063E1005FEA97 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				943A02D316DD7BD90063D7DB /* AppDelegate.h */,
+				943A02D416DD7BD90063D7DB /* AppDelegate.m */,
+				943A02D616DD7BD90063D7DB /* MainMenu.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		9437A6EB175063ED005FEA97 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 		943A02B516DD7BD90063D7DB = {
 			isa = PBXGroup;
 			children = (
 				940E9ABB16E02C030057ECD4 /* icon.icns */,
-				943A02C716DD7BD90063D7DB /* equinox */,
+				943A02C716DD7BD90063D7DB /* Equinox */,
 				943A02C016DD7BD90063D7DB /* Frameworks */,
 				943A02BF16DD7BD90063D7DB /* Products */,
 			);
@@ -84,21 +109,21 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		943A02C716DD7BD90063D7DB /* equinox */ = {
+		943A02C716DD7BD90063D7DB /* Equinox */ = {
 			isa = PBXGroup;
 			children = (
-				943A02D316DD7BD90063D7DB /* AppDelegate.h */,
-				943A02D416DD7BD90063D7DB /* AppDelegate.m */,
-				943A02D616DD7BD90063D7DB /* MainMenu.xib */,
+				9437A6EB175063ED005FEA97 /* Settings */,
+				9437A6EA175063E1005FEA97 /* Main */,
+				9437A6E717506270005FEA97 /* Scripts */,
 				943A02C816DD7BD90063D7DB /* Supporting Files */,
 			);
+			name = Equinox;
 			path = equinox;
 			sourceTree = "<group>";
 		};
 		943A02C816DD7BD90063D7DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				943A02DE16DD8C4D0063D7DB /* equinox.pl */,
 				943A02C916DD7BD90063D7DB /* equinox-Info.plist */,
 				943A02CA16DD7BD90063D7DB /* InfoPlist.strings */,
 				943A02CD16DD7BD90063D7DB /* main.m */,
@@ -162,8 +187,8 @@
 				943A02CC16DD7BD90063D7DB /* InfoPlist.strings in Resources */,
 				943A02D216DD7BD90063D7DB /* Credits.rtf in Resources */,
 				943A02D816DD7BD90063D7DB /* MainMenu.xib in Resources */,
-				943A02DF16DD8C4D0063D7DB /* equinox.pl in Resources */,
 				940E9ABC16E02C030057ECD4 /* icon.icns in Resources */,
+				9437A6E917506279005FEA97 /* equinox.pl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

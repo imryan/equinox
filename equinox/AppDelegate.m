@@ -24,6 +24,27 @@
     NSBeginAlertSheet(@"IP Formatting", @"OK", nil, nil, [[NSApp delegate]window], self, @selector(sheetDidEnd:resultCode:contextInfo:), NULL, NULL, @"IP Address must be numerical, like this: '192.168.1.1'. To get this, ping the IP in Terminal: 'ping http://google.com' to acquire an IP, or open Network Utility > Ping. Then, enter the hostname. The first number returned is the IP address for the hostname.");
 }
 
+- (IBAction)settings:(id)sender
+{
+    [settingsPanel makeKeyAndOrderFront:self];
+}
+
+- (IBAction)browseFile:(id)sender
+{
+    int i;
+    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
+    [openPanel setCanChooseFiles:true];
+    [openPanel setCanChooseDirectories:true];
+    
+    [openPanel runModal];
+}
+
+- (IBAction)save:(id)sender
+{
+    [settingsPanel orderOut:self];
+    logView.backgroundColor = bcWell.color;
+}
+
 - (IBAction)send:(id)sender
 {
     // Get system's current time & add information to log (console)
@@ -105,6 +126,8 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
+    settingsPanel.isVisible = false;
+    
     [_window setReleasedWhenClosed:false];
     [loader setHidden:true];
     [sendingStr setHidden:true];

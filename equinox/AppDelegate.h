@@ -19,6 +19,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
     
+    //
+    // MAIN VIEW
+    //
+
+    
     // Fields to be inputted into attack
     IBOutlet NSTextField *ipField;
     IBOutlet NSTextField *portField;
@@ -41,11 +46,25 @@
     NSTimer *timer;
     NSString *ti;
     int i;
+    
+    
+    //
+    // SETTINGS VIEW
+    //
+    
+    IBOutlet NSWindow *settingsPanel;
+    
+    // Color wells: bc = background & fc = foreground
+    IBOutlet NSColorWell *bcWell;
 
 }
 
 - (IBAction)send:(id)sender;
 - (IBAction)help:(id)sender;
+
+- (IBAction)settings:(id)sender;
+- (IBAction)browseFile:(id)sender;
+- (IBAction)save:(id)sender;
 
 @property (assign) IBOutlet NSWindow *window;
 
