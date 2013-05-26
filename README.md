@@ -6,13 +6,13 @@ Any unintended uses for this software are not permitted, and are found illegal i
 
 Features
 ---
-* Cocoa GUI for executing command-line DDoS tests.
+* Cocoa GUI for executing command-line DoS tests.
 * Pre-made  Perl script included in repository.
 * Smooth overall performance.
 
 To be implemented
 ---
-* Ability to include your own DDoS script, and configure the GUI to work with it accordingly.
+* Ability to include your own DoS script, and configure the GUI to work with it accordingly.
 * GUI design upgrades.
 * More, unplanned features, also coming soon.
 * Renamed folders contained with their corresponding classes. (Better organization)
