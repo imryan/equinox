@@ -2,7 +2,7 @@
 # EQUINOX IS A DDOS TEST TOOL FOR YOUR SITE/PROGRAM'S PROTECTION
 
 # ----------------------------# + NotDos created.
-#  ver. 1.0.1                 # + Basic DDoS methods added.
+#  ver. 1.0.1                 # + Basic DoS methods added.
 #  December 21, 2012          # + Program enters ver. 1.0.1.
 #-----------------------------# 
 
