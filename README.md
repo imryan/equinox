@@ -1,7 +1,7 @@
 Equinox
 ---
 
-Open-source DDoS tester tool.
+Open-source DoS tester tool.
 Any unintended uses for this software are not permitted, and are found illegal in certain countries.
 
 Features
