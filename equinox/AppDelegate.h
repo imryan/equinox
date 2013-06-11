@@ -1,4 +1,4 @@
-/* http://imryan.mit-license.org/
+/* http://imryan.net
  *
  * EQUINOX (1.0.3) IS A DISTRIBUTED DENIAL OF SERVICE (DDOS) ATTACK TESTER.
  * USE IT TO CHECK YOUR SITE PROTECTION/ETC.
@@ -23,7 +23,6 @@
     // MAIN VIEW
     //
 
-    
     // Fields to be inputted into attack
     IBOutlet NSTextField *ipField;
     IBOutlet NSTextField *portField;
@@ -47,7 +46,6 @@
     NSString *ti;
     int i;
     
-    
     //
     // SETTINGS VIEW
     //
@@ -66,6 +64,6 @@
 - (IBAction)browseFile:(id)sender;
 - (IBAction)save:(id)sender;
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSWindow *window;
 
 @end

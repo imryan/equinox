@@ -1,4 +1,4 @@
-/* http://imryan.mit-license.org/
+/* http://imryan.net
  *
  * EQUINOX (1.0.3) IS A DENIAL OF SERVICE (DOS) ATTACK TESTER.
  * USE IT TO CHECK YOUR SITE PROTECTION/ETC.
@@ -31,7 +31,6 @@
 
 - (IBAction)browseFile:(id)sender
 {
-    int i;
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     [openPanel setCanChooseFiles:true];
     [openPanel setCanChooseDirectories:true];
@@ -43,6 +42,9 @@
 {
     [settingsPanel orderOut:self];
     logView.backgroundColor = bcWell.color;
+    
+    NSData *colorData = [NSArchiver archivedDataWithRootObject:logView.backgroundColor];
+    [[NSUserDefaults standardUserDefaults] setObject:colorData forKey:@"colorKey"];
 }
 
 - (IBAction)send:(id)sender
@@ -54,7 +56,6 @@
     formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"MM-dd-yyy HH:mm"];
     timeStr = [formatter stringFromDate:[NSDate date]];
-    [formatter release];
  
     // Check if all fields are valid and assign the values to variables
     if ([ipField.stringValue isEqualToString:@""] || [timeField.stringValue isEqualToString:@""] || [portField.stringValue isEqualToString:@""])
@@ -117,12 +118,6 @@
 // Method that handles the alert sheet hiding
 - (void)sheetDidEnd:(NSWindow *)sheet resultCode:(NSInteger)resultCode contextInfo:(void *)contextInfo {}
 
-- (void)dealloc
-{
-    [super dealloc];
-    
-    // Release unused variables here...
-}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
@@ -137,6 +132,15 @@
     [logView setRichText:false];
     [logView setAlignment:NSCenterTextAlignment];
     [logView setBackgroundColor:[NSColor gridColor]];
+    
+    // Restore saved preferences
+    NSColor *color = nil;
+    NSData  *data  = [[NSUserDefaults standardUserDefaults] dataForKey:@"colorKey"];
+    
+    if (data != nil) {
+        color = (NSColor*)[NSUnarchiver unarchiveObjectWithData:data];
+        logView.backgroundColor = color;
+    }
 }
 
 - (BOOL)applicationShouldHandleReopen:(NSApplication *)sender hasVisibleWindows:(BOOL)flag

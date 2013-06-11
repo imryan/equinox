@@ -65,13 +65,6 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
-		9437A6EB175063ED005FEA97 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Settings;
-			sourceTree = "<group>";
-		};
 		943A02B516DD7BD90063D7DB = {
 			isa = PBXGroup;
 			children = (
@@ -112,7 +105,6 @@
 		943A02C716DD7BD90063D7DB /* Equinox */ = {
 			isa = PBXGroup;
 			children = (
-				9437A6EB175063ED005FEA97 /* Settings */,
 				9437A6EA175063E1005FEA97 /* Main */,
 				9437A6E717506270005FEA97 /* Scripts */,
 				943A02C816DD7BD90063D7DB /* Supporting Files */,
@@ -294,6 +286,7 @@
 		943A02DC16DD7BD90063D7DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "equinox/equinox-Prefix.pch";
@@ -306,6 +299,7 @@
 		943A02DD16DD7BD90063D7DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "equinox/equinox-Prefix.pch";
