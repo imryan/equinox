@@ -39,8 +39,9 @@
     NSOpenPanel *openPanel = [NSOpenPanel openPanel];
     [openPanel setCanChooseFiles:true];
     [openPanel setCanChooseDirectories:true];
-    
     [openPanel runModal];
+    
+    // Put the file into memory & save
 }
 
 - (IBAction)save:(id)sender
@@ -50,6 +51,9 @@
     
     NSData *colorData = [NSArchiver archivedDataWithRootObject:logView.backgroundColor];
     [[NSUserDefaults standardUserDefaults] setObject:colorData forKey:@"colorKey"];
+    
+    // Configure the new script
+    commandArgs = argField.stringValue;
 }
 
 - (IBAction)send:(id)sender

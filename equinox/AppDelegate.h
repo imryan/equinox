@@ -55,10 +55,11 @@
     // SETTINGS VIEW
     //
     
-    IBOutlet NSWindow *settingsPanel;
-    
-    // Color wells: bc = background & fc = foreground
-    IBOutlet NSColorWell *bcWell;
+    IBOutlet NSWindow      *settingsPanel;
+    IBOutlet NSColorWell   *bcWell;
+    IBOutlet NSTextField   *argField;
+    IBOutlet NSPopUpButton *typeSel;
+    NSString *commandArgs;
 
 }
 
