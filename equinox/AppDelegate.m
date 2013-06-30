@@ -90,12 +90,12 @@
     [logView.textStorage.mutableString appendString:timeLog];
     
         
-        // Display 'sending...' and start the loader
-        [sendingStr setHidden:false];
-        [loader setHidden:false];
-        [loader startAnimation:loader];
-        
-        timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+   // Display 'sending...' and start the loader
+   [sendingStr setHidden:false];
+   [loader setHidden:false];
+   [loader startAnimation:loader];
+   
+   timer = [NSTimer scheduledTimerWithTimeInterval:1.0
                                                   target:self
                                                selector:@selector(stopLoader)
                                                userInfo:nil
