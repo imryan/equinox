@@ -34,16 +34,6 @@
     [settingsPanel makeKeyAndOrderFront:self];
 }
 
-- (IBAction)browseFile:(id)sender
-{
-    NSOpenPanel *openPanel = [NSOpenPanel openPanel];
-    [openPanel setCanChooseFiles:true];
-    [openPanel setCanChooseDirectories:true];
-    [openPanel runModal];
-    
-    // Put the file into memory & save
-}
-
 - (IBAction)save:(id)sender
 {
     [settingsPanel orderOut:self];
@@ -51,9 +41,6 @@
     
     NSData *colorData = [NSArchiver archivedDataWithRootObject:logView.backgroundColor];
     [[NSUserDefaults standardUserDefaults] setObject:colorData forKey:@"colorKey"];
-    
-    // Configure the new script
-    commandArgs = argField.stringValue;
 }
 
 - (IBAction)send:(id)sender
@@ -108,7 +95,11 @@
         [loader setHidden:false];
         [loader startAnimation:loader];
         
-        timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(stopLoader) userInfo:nil repeats:YES];
+        timer = [NSTimer scheduledTimerWithTimeInterval:1.0
+                                                  target:self
+                                               selector:@selector(stopLoader)
+                                               userInfo:nil
+                                                repeats:true];
     }
 }
 
@@ -121,12 +112,19 @@
         [loader setHidden:true];
         [sendingStr setHidden:true];
         i = 0;
+        
+        i++;
+        if (i == 2) {
+            // Quit the terminal
+            NSString *s = [NSString stringWithFormat:@"tell application \"Terminal\" to quit"];
+            NSAppleScript *as = [[NSAppleScript alloc] initWithSource:s];
+            [as executeAndReturnError:nil];
+        }
     }
 }
 
 // Method that handles the alert sheet hiding
 - (void)sheetDidEnd:(NSWindow *)sheet resultCode:(NSInteger)resultCode contextInfo:(void *)contextInfo {}
-
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {

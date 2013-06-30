@@ -57,17 +57,12 @@
     
     IBOutlet NSWindow      *settingsPanel;
     IBOutlet NSColorWell   *bcWell;
-    IBOutlet NSTextField   *argField;
-    IBOutlet NSPopUpButton *typeSel;
-    NSString *commandArgs;
-
 }
 
 - (IBAction)send:(id)sender;
 - (IBAction)help:(id)sender;
 
 - (IBAction)settings:(id)sender;
-- (IBAction)browseFile:(id)sender;
 - (IBAction)save:(id)sender;
 
 @property (weak) IBOutlet NSWindow *window;
