@@ -389,23 +389,23 @@
         </window>
         <window title="Equinox Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hidesOnDeactivate="YES" oneShot="NO" showsToolbarButton="NO" animationBehavior="default" id="1041" customClass="NSPanel">
             <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" utility="YES"/>
-            <rect key="contentRect" x="838" y="553" width="276" height="107"/>
+            <rect key="contentRect" x="838" y="553" width="304" height="111"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
             <value key="minSize" type="size" width="276" height="254"/>
             <value key="maxSize" type="size" width="276" height="254"/>
             <view key="contentView" id="1042">
-                <rect key="frame" x="0.0" y="0.0" width="276" height="107"/>
+                <rect key="frame" x="0.0" y="0.0" width="304" height="111"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box autoresizesSubviews="NO" title="Colors" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="1055">
-                        <rect key="frame" x="17" y="37" width="242" height="63"/>
+                        <rect key="frame" x="17" y="41" width="270" height="63"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView">
-                            <rect key="frame" x="1" y="1" width="240" height="47"/>
+                            <rect key="frame" x="1" y="1" width="268" height="47"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <colorWell translatesAutoresizingMaskIntoConstraints="NO" id="1109">
-                                    <rect key="frame" x="178" y="14" width="44" height="23"/>
+                                    <rect key="frame" x="203" y="14" width="47" height="23"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <color key="color" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 </colorWell>
@@ -435,7 +435,7 @@
                         <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </box>
                     <button verticalHuggingPriority="750" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1093">
-                        <rect key="frame" x="64" y="9" width="149" height="25"/>
+                        <rect key="frame" x="78" y="11" width="149" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="149" id="1099"/>
@@ -490,12 +490,10 @@
         <class className="AppDelegate" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AppDelegate.h"/>
             <relationships>
-                <relationship kind="action" name="browseFile:"/>
                 <relationship kind="action" name="help:"/>
                 <relationship kind="action" name="save:"/>
                 <relationship kind="action" name="send:"/>
                 <relationship kind="action" name="settings:"/>
-                <relationship kind="outlet" name="argField" candidateClass="NSTextField"/>
                 <relationship kind="outlet" name="bcWell" candidateClass="NSColorWell"/>
                 <relationship kind="outlet" name="ipField" candidateClass="NSTextField"/>
                 <relationship kind="outlet" name="loader" candidateClass="NSProgressIndicator"/>
@@ -504,7 +502,6 @@
                 <relationship kind="outlet" name="sendingStr" candidateClass="NSTextField"/>
                 <relationship kind="outlet" name="settingsPanel" candidateClass="NSWindow"/>
                 <relationship kind="outlet" name="timeField" candidateClass="NSTextField"/>
-                <relationship kind="outlet" name="typeSel" candidateClass="NSPopUpButton"/>
                 <relationship kind="outlet" name="window" candidateClass="NSWindow"/>
             </relationships>
         </class>
